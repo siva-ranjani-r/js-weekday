@@ -1,10 +1,11 @@
-var n=prompt("Enter the week day as string");
-var dt = new Date();
-     if(dt.getDay() == 6 || dt.getDay() == 0)
-       {
-        console.log( "weekend");
-        } 
-		else
-		{
-		console.log( "Not a weekend");
-		}
+var day=String(prompt("enter Date in this format [yyyy,mm,dd] :"));
+var x=new Date(day);
+var day=x.getDay();
+if(day>=1&&day<=6)
+{
+	document.write("weekday")
+}
+else
+{
+	document.write("weekend")
+}
